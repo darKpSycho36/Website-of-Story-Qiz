@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questions</title>
+    <style>
+        body{
+            margin: 1%;
+            padding: 3%;
+            background: url(../04-11-2023/bookpic.jpg) center center fixed;
+           
+        }
+        h1{
+            font-style: oblique;
+            color:darkorange;
+            background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow with 50% opacity */
+        }
+        p{
+           
+            padding-left:1%;
+            font-style: oblique;
+            color:lightpink;
+            font-size: 160%;
+        }
+        .qes{
+        
+            padding-left:7%;
+            font-style: oblique;
+            font-size: 120%;
+            color: lightcyan;
+            background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow with 50% opacity */
+        }
+        input{
+            margin: 1%;
+            font-style: oblique;
+            font-size: 120%;
+            color:darkgoldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><big><b>Here's a simple story followed by some questions with multiple choice options:</b></big></h1>
+    <form action="/Daily Updates/04-11-2023/correctAnswers.html" onsubmit="return sub();">
+        <div class="qes">
+            <p><b>1.Where did Oliver find the gem?</b></p>
+            
+            <label class="in">
+                <input type="radio" name="option1" id="op1" value="In a river">In a river<br>
+                <input type="radio" name="option1" id="op2" value="Half-buried in the ground">Half-buried in the ground<br>
+                <input type="radio" name="option1" id="op3" value="In a cave">In a cave<br>
+            </label>
+            <p><b>2.What happened when Oliver picked up the gem?</b></p>
+            <label class="in">
+                <input type="radio" name="option2" id="op4" value="The trees withered and died">The trees withered and died<br>
+                <input type="radio" name="option2" id="op5" value="The forest came to life and became magical">The forest came to life and became magical<br>
+                <input type="radio" name="option2" id="op6" value="It started raining">It started raining<br>
+            </label>
+            <p><b>3.What was the forest filled with?</b></p>
+            <label class="in">
+                <input type="radio" name="option3" id="op7" value="The scent of wildflowers">The scent of wildflowers<br>
+                <input type="radio" name="option3" id="op8" value="The scent of pine trees">The scent of pine trees<br>
+                <input type="radio" name="option3" id="op9" value="The scent of the ocean">The scent of the ocean<br>
+            </label>
+            <p><b>4.What did Oliver like to do?</b></p>
+            <label class="in">
+                <input type="radio" name="option4" id="op10" value=" Stay at home all day"> Stay at home all day<br>
+                <input type="radio" name="option4" id="op11" value="Explore and discover new things">Explore and discover new things<br>
+                <input type="radio" name="option4" id="op12" value=" Sleep under a rock"> Sleep under a rock<br>
+            </label>
+            <p><b>5.How did the gem make Oliver feel?</b></p>
+            <label class="in">
+                <input type="radio" name="option5" id="op13" value="Hungry">Hungry<br>
+                <input type="radio" name="option5" id="op14" value=" Tired"> Tired<br>
+                <input type="radio" name="option5" id="op15" value="Tingly">Tingly<br>
+            </label>
+        </div>
+            <center>
+                <input type="submit" id="submit">
+            </center>
+    </form>
+    <script>
+        var s1=document.getElementById("op1");
+        var s12=document.getElementById("op2");
+        var s13=document.getElementById("op3");
+
+        var s2=document.getElementById("op4");
+        var s22=document.getElementById("op5");
+        var s23=document.getElementById("op6");
+
+        var s3=document.getElementById("op7");
+        var s32=document.getElementById("op8");
+        var s33=document.getElementById("op9");
+
+        var s4=document.getElementById("op10");
+        var s42=document.getElementById("op11");
+        var s43=document.getElementById("op12");
+
+        var s5=document.getElementById("op13");
+        var s52=document.getElementById("op14");
+        var s53=document.getElementById("op15");
+        
+        // var submit=document.getElementById("submit");
+
+        function sub() {  
+            var flag=true;
+            if(!(s1.checked || s12.checked || s13.checked)){
+                flag=false;
+                alert("Please select atleast one radion to fist question")
+            }
+
+            if(!(s2.checked || s22.checked || s23.checked)){
+                flag= false;
+                alert("Please select atleast one radion to Second question")
+            }
+            if(!(s3.checked || s32.checked || s33.checked)){
+                flag= false;
+                alert("Please select atleast one radion to third question")
+            }
+            if(!(s4.checked || s42.checked || s43.checked)){
+                flag= false;
+                alert("Please select atleast one radion to fourth question")
+            }
+            if(!(s5.checked || s52.checked || s53.checked)){
+                flag= false;
+                alert("Please select atleast one radion to fifth question")
+            }
+            return flag;
+            //  document.getElementById("submit").click():
+        }
+
+    </script>
+
+</body>
+</html>
+
+

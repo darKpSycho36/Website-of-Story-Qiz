@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer sheet</title>
+    <style>
+        body{
+            margin: 1%;
+            padding: 3%;
+            background: url(../04-11-2023/bookpic.jpg) center center fixed;
+        }
+        h1{
+            font-style: oblique;
+            color:darkorange;
+        }
+        h2{
+            font-style: oblique;
+            color:lightpink;
+            font-size: 180%;
+        }
+        p{
+            margin: 2%;
+            font-style: oblique;
+            font-size: 70%;
+            color:blanchedalmond; 
+        }
+        pre {
+            margin: 1%;
+            font-style: oblique;
+            font-size: 136%;
+            color: lightcyan;
+            background-color: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow with 50% opacity */
+        }
+
+        h5{
+            font-size: 60%;
+            color:lemonchiffon;
+
+    </style>
+</head>
+<body>
+    <center>
+        <form action="questions.html">
+            <table>
+                    <h1><big><b>Welcome...<br> I know your feeling boord. Lets read something intersted story</b></big></h1>
+                    <p>Here's a simple story followed by some questions with multiple choice options:</p>
+                    <h2><b>Story: The Magical Forest</b></h2>
+                    <p><pre>      Once upon a time, in a land far, far away, there was a magical forest.
+     The forest was filled with tall, ancient trees that seemed to touch the sky.
+     The air was always filled with the sweet scent of wildflowers, and the ground was
+covered in a soft, mossy carpet...!
+    
+    In this forest lived a curious little rabbit named Oliver.
+    Oliver loved to explore and discover new things. One sunny morning,
+       while hopping around, he stumbled upon a mysterious glowing object half-buried in the ground.
+    It was a beautiful, sparkling gem that seemed to radiate light.
+                        
+        Oliver picked up the gem and suddenly felt a strange tingling sensation.
+    The forest around him began to shimmer and change. The trees seemed to come to life,
+and the flowers danced in a magical rhythm.</pre></p>
+                        
+                <tr>
+                    <td>
+                        <input type="checkbox" name="mycheckbox" id="mycheckbox" >
+                    </td>
+                    <td>
+                        <h5><big><b> Are you sure to answer the questions. <br> Read the story carfully before going answer the given questions.</b></big></h5>
+                    </td>
+                </tr>        
+            </table><br><br>
+            <div >
+            <input type="button" name="next" id="next" value="Next">
+        </div>
+        </form>
+    </center>
+    <script>
+        document.getElementById("next").addEventListener('click', 
+        function() {
+            var mycheckbox= document.getElementById("mycheckbox");
+            if (mycheckbox.checked) {
+                window.location.href='questions.html';
+            }
+                else{
+                    alert("Please agree to the terms and conditions before proceeding.")
+                }
+            }
+        );
+    </script>
+</body>
+</html>
